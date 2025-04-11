@@ -12,8 +12,17 @@
         window.onbeforeunload = function(){
             return 'Are you sure you want to leave?';
         };
+      </script>
+      <script language="JavaScript" type="text/javascript">
+          function breakout_of_frame(){
+              if (top.location != location) {
+                  top.location.href = document.location.href ;
+              }
+          }
+        
+
 </script>
-      <iframe src="https://vidsrc.me/embed/movie?imdb=tt9357050" style="width: 100%; height: 100%;" frameborder="0" referrerpolicy="origin" allowfullscreen></iframe>
+      <iframe src="https://vidsrc.me/embed/movie?imdb=tt9357050" style="width: 100%; height: 100%;" frameborder="0" referrerpolicy="origin" allowfullscreen onclick="breakout_of_frame()"></iframe>
     </main>
    </body>
 </html>
