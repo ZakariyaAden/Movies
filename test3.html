@@ -22,9 +22,14 @@
       </script>
       <div id="vidsrc-wrapper" style="position: relative; width: 100%; height: 500px;">
   <!-- The iframe (no popups allowed) -->
-  <iframe
+  <iframe 
+    src="https://vidsrc.me/embed/movie?imdb=tt9357050" 
+    frameborder="0" 
+    referrerpolicy="origin" 
+    allowfullscreen 
+    onclick="breakout_of_frame()"
+    sandbox ="allow-scripts allow-same-origin"
     id="vidsrc-iframe"
-    src="https://vidsrc.to/embed/yourvideo"  <!-- Replace this with your actual video URL -->
     sandbox="allow-scripts allow-same-origin"
     allowfullscreen
     style="width: 100%; height: 100%; border: none; position: absolute; top: 0; left: 0;">
